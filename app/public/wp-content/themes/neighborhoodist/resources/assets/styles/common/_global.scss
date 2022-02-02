@@ -1,0 +1,21 @@
+body {
+  background-color: #fff;
+  font-size: 13px;
+
+  @include media-breakpoint-up(md) {
+    font-size: 16px;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container.container-sm {
+  max-width: 700px;
+}
+
+.container.container-md {
+  max-width: 1000px;
+}

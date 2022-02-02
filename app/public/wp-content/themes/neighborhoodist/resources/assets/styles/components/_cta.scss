@@ -1,0 +1,11 @@
+.cta-section {
+  .container {
+    max-width: 1200px;
+  }
+
+  &:not(.alignfull) {
+    .container {
+      max-width: 700px;
+    }
+  }
+}
