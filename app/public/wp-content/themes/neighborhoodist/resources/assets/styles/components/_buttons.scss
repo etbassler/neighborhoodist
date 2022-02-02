@@ -1,9 +1,0 @@
-.btn {
-  border-radius: 0;
-  font-weight: 900;
-  padding: 10px 20px;
-
-  &.btn-light {
-    color: map-get($theme-colors, "primary");
-  }
-}
