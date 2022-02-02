@@ -1,0 +1,23 @@
+.image-section {
+  .container {
+    max-width: 1440px;
+  }
+
+  &:not(.alignfull) {
+    .container {
+      max-width: 1000px;
+    }
+  }
+
+  .image-caption {
+    width: 500px;
+    margin: auto;
+    font-size: 12px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.67;
+    letter-spacing: 0.38px;
+    text-align: center;
+  }
+}
