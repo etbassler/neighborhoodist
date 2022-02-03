@@ -76,6 +76,32 @@
             "maxlength": ""
         },
         {
+            "key": "field_61fb5acd68f3b",
+            "label": "Status",
+            "name": "status",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "sale": "For Sale",
+                "escrow": "Pending\/In Escrow",
+                "sold": "Sold"
+            },
+            "default_value": false,
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "label",
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
             "key": "field_61f35e306b325",
             "label": "Streetview URL",
             "name": "streetview_url",
@@ -178,10 +204,10 @@
             "mime_types": ""
         },
         {
-            "key": "field_61f2222fe558e",
-            "label": "On the cover",
-            "name": "on_the_cover",
-            "type": "true_false",
+            "key": "field_61f606f148dd9",
+            "label": "Magazine Text",
+            "name": "magazine_text",
+            "type": "wysiwyg",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -190,37 +216,10 @@
                 "class": "",
                 "id": ""
             },
-            "message": "",
-            "default_value": 0,
-            "ui": 0,
-            "ui_on_text": "",
-            "ui_off_text": ""
-        },
-        {
-            "key": "field_61f606f148dd9",
-            "label": "On the cover text",
-            "name": "on_the_cover_text",
-            "type": "wysiwyg",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": [
-                [
-                    {
-                        "field": "field_61f2222fe558e",
-                        "operator": "==",
-                        "value": "1"
-                    }
-                ]
-            ],
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
             "default_value": "",
             "tabs": "all",
             "toolbar": "full",
-            "media_upload": 1,
+            "media_upload": 0,
             "delay": 0
         },
         {
@@ -408,5 +407,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1643650518
+    "modified": 1643866932
 }

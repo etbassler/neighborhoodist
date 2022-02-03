@@ -20,12 +20,17 @@
             <div class="space">{{$space}}</div>
             <div class="price">{{$price}}</div>
           </div>
+          <div class="home-info--meta--bottom">
+            <div class="status">{{$status}}</div>
+            <a href="">Interested in this property?</a>
+          </div>
         </div>
       </div>
       <div class="col-md-6 home--magazine-info">
 
           <div class="magazine-text">
-          {{$magazine_text}}
+          {!! $magazine_text ? $magazine_text : 'Default copy when nothing else is used.' !!}
+
           </div>
           {!! App::acfimg($magazine_cover->ID,'large') !!}
 

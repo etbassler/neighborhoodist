@@ -153,10 +153,14 @@ function add_webfontloader() { ?>
 <script>
   WebFont.load({
     google: {
-      families: ['Inter:100,300,400,700,900','OpenSans:100,300,400,700,900']
-    }
+      families: ['OpenSans:100,300,400,700,900']
+    },
+    typekit: {
+    id: 'efs7nkv'
+  }
   });
 </script>
+
 <?php }
 add_action('wp_footer',  __NAMESPACE__ . '\\add_webfontloader');
 

@@ -16,8 +16,7 @@ $navbar-dark-toggler-icon-bg: none;
 $navbar-light-toggler-icon-bg: none;
 
 // Fonts
-$serif: "Georgia", serif;
 $sans-serif: opensans, -apple-system, blinkmacsystemfont, "Segoe UI", "Roboto",
   "Helvetica Neue", arial, sans-serif;
-$sans-serif-alt: inter, -apple-system, blinkmacsystemfont, "Segoe UI", "Roboto",
-  "Helvetica Neue", arial, sans-serif;
+$sans-serif-alt: ff-good-headline-web-pro-con, $sans-serif;
+$sans-serif-alt-x: ff-good-headline-web-pro-ext, $sans-serif-alt;
