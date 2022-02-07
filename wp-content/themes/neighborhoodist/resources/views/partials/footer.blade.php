@@ -11,11 +11,20 @@
           <span class="footer-info--title">Contact Info</span>
           <div class="footer-info--row">
             <span>E-mail</span>
-            @php the_field('footer_contact_email','option') @endphp
+
+          @php if (get_field('footer_contact_email','option')) { @endphp
+            <a href="mailto:@php echo get_field('footer_contact_email','option') @endphp">
+              @php echo get_field('footer_contact_email','option') @endphp
+            </a>
+          @php } @endphp
           </div>
           <div class="footer-info--row">
             <span>Phone</span>
-            @php the_field('footer_contact_phone','option') @endphp
+            @php if (get_field('footer_contact_phone','option')) { @endphp
+            <a href="tel:@php echo get_field('footer_contact_phone','option') @endphp">
+              @php echo get_field('footer_contact_phone','option') @endphp
+            </a>
+          @php } @endphp
           </div>
           <div class="footer-info--row">
             <span>Address</span>
