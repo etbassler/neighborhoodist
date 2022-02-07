@@ -3,6 +3,7 @@
 namespace App\Controllers;
 
 use Sober\Controller\Controller;
+use WP_Query;
 
 class App extends Controller
 {
@@ -42,6 +43,38 @@ class App extends Controller
           'depth' => 2
         );
         return $args;
+    }
+
+    public function getRelatedContent()
+    {
+        $overrideIDs = get_field('more_featured_homes_overrides');
+        if (count($overrideIDs) > 0 ){
+            $overrideargs = array(
+            'post_type' => ['home'],
+            'post__in'      => $overrideIDs
+            );
+            $overridequery = new WP_Query($overrideargs);
+
+        }
+        $relatedargs = array(
+            'posts_per_page'	=> 3 - count($overrideIDs),
+            'post_type'		=> ['home'],
+            'post__not_in'      => $overrideIDs
+            // 'meta_key'		=> 'color',
+            // 'meta_value'	=> 'red'
+        );
+        // query
+        $relatedquery = new WP_Query( $relatedargs );
+
+        if (count($overrideIDs) > 0){
+            $wp_query = new WP_Query();
+            $wp_query->posts = array_merge( $overridequery->posts, $relatedquery ->posts );
+
+            //populate post_count count for the loop to work correctly
+            $wp_query->post_count = $overridequery->post_count + $relatedquery ->post_count;
+            return $wp_query;
+        }
+        return $$relatedquery;
     }
     /**
      * Outputs an image from ACF ID.

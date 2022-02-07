@@ -20,9 +20,9 @@
         },
         {
             "key": "field_61ca9d8df0894",
-            "label": "Footer Contact Info",
-            "name": "footer_contact_info",
-            "type": "wysiwyg",
+            "label": "Footer Contact Email",
+            "name": "footer_contact_email",
+            "type": "text",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -32,10 +32,48 @@
                 "id": ""
             },
             "default_value": "",
-            "tabs": "all",
-            "toolbar": "full",
-            "media_upload": 1,
-            "delay": 0
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_61ff5e13a4815",
+            "label": "Footer Contact Phone",
+            "name": "footer_contact_phone",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_61ff5e1da4816",
+            "label": "Footer Contact Address",
+            "name": "footer_contact_address",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": ""
         },
         {
             "key": "field_61ecf05c9e95f",
@@ -187,5 +225,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1642917999
+    "modified": 1644125742
 }

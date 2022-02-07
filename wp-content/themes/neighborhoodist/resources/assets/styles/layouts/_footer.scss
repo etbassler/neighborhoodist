@@ -32,6 +32,22 @@
     }
   }
 
+  .footer-info {
+    .footer-info--title {
+      color: map-get($theme-colors, "primary");
+    }
+
+    .footer-info--row {
+      display: flex;
+
+      span {
+        display: block;
+        margin-right: 20px;
+        width: 60px;
+      }
+    }
+  }
+
   .footer-social {
     display: flex;
 

@@ -11,11 +11,13 @@
       > img {
         max-width: 150px;
         margin-right: 25px;
+        align-self: center;
       }
 
       .home-subheader--author-info {
         span {
           font-weight: bold;
+          display: block;
         }
       }
     }
@@ -52,6 +54,7 @@
         }
       }
     }
+
     .home-info--meta--bottom {
       font-size: 14px;
     }
@@ -86,6 +89,10 @@
           font-weight: bold;
           font-size: 14px;
           text-transform: uppercase;
+        }
+
+        > *:last-child {
+          margin-bottom: 0;
         }
       }
     }
