@@ -49,4 +49,5 @@ $realtor = $agent_override[0];
   </div>
 </div>
   @endif
+  @include('partials.related-content')
 </article>

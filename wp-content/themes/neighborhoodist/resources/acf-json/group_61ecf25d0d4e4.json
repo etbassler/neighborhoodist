@@ -419,7 +419,7 @@
             "elements": "",
             "min": "",
             "max": 3,
-            "return_format": "object"
+            "return_format": "id"
         }
     ],
     "location": [
@@ -440,5 +440,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1644122058
+    "modified": 1644204207
 }
