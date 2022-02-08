@@ -113,10 +113,37 @@
 
       .container {
         background-color: transparent;
+        max-width: 1440px;
       }
 
       .home-info {
         background: white;
+        padding: 31px;
+        position: relative;
+
+        .top-term {
+          position: absolute;
+          top: 0;
+          right: 0;
+          padding: 4px 6px;
+        }
+        .header-eyebrow {
+          display: block;
+          text-transform: uppercase;
+        }
+        .h1 {
+          font-family: $sans-serif-alt;;
+          display: inline-block;
+          font-size: 45px;
+          font-weight: 500;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: normal;
+          letter-spacing: 1px;
+        }
+        .streetview- {
+          display: inline-block;
+        }
       }
 
       .bg-container {

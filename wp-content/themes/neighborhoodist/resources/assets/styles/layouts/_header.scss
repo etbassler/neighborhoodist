@@ -1,5 +1,12 @@
 .site-header {
-  background-color: rgba(216, 216, 216, 0.5);
+  
+  padding: 26px 0;
+  height: 69px;
+
+  .container {
+    max-width: 1440px;
+    padding: 0;
+  }
 
   .navbar-toggler-icon {
     background-image: url("/wp-content/themes/neighborhoodist/resources/assets/images/hamburger.svg");
@@ -17,9 +24,12 @@
   }
 
   .brand {
+    margin-left: 139px;
+
     img {
       max-width: 210px;
     }
+    
   }
 
   .navbar {
@@ -34,6 +44,7 @@
       margin-right: 30px;
       font-family: $sans-serif-alt;
       font-size: 14px;
+      color: #000;
     }
   }
 }
@@ -93,6 +104,11 @@
   padding-top: 100px;
   padding-bottom: 30px;
 
+  .container {
+    max-width: 1440px;
+    padding: 0;
+  }
+
   .neighborhood-menu-title {
     display: flex;
 
@@ -120,4 +136,15 @@
       color: black;
     }
   }
+  #menu-primary-menu a {
+    font-family: $sans-serif-alt;
+    font-size: 26px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #000;
+  }
+  
 }
