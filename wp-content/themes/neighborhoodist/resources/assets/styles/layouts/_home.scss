@@ -100,7 +100,7 @@
     &.home-header {
       .home--magazine-info {
         justify-content: flex-start;
-
+        
         img {
           margin-right: 23px;
           margin-bottom: -20px;
@@ -113,7 +113,7 @@
     }
 
     &.home-header-bg {
-      background-color: rgba(216, 216, 216, 0.5);
+      background-color: #fff;
       padding-top: 33vw;
       padding-bottom: 70px;
       position: relative;
@@ -124,6 +124,42 @@
 
       .home-info {
         background: white;
+        padding: 31px;
+        position: relative;
+
+        .top-term {
+          position: absolute;
+          top: 0;
+          right: 0;
+          padding: 4px 6px;
+        }
+        .header-eyebrow {
+          display: block;
+          text-transform: uppercase;
+        }
+        .h1 {
+          font-family: $sans-serif-alt;;
+          display: inline-block;
+          font-size: 45px;
+          font-weight: 500;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: normal;
+          letter-spacing: 1px;
+        }
+        .streetview- {
+          display: inline-block;
+        }
+        .home-info--meta--bottom {
+          font-family: $sans-serif;
+          font-size: 14px;
+          font-weight: 600;
+
+          .status, a {
+            display: inline-block;
+            padding-right: 10px;
+          }
+        }
       }
 
       .bg-container {
@@ -139,6 +175,23 @@
           height: 100%;
         }
       }
+      .magazine-text {
+        font-family: $sans-serif;
+        font-size: 14px !important;
+        text-align: right;
+        margin-right: 14px;
+        strong {
+          text-transform: uppercase;
+        }
+        p {
+          margin-bottom: 0;
+        }
+      }
     }
+  }
+  .page-content--home {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding-top: 82px;
   }
 }
