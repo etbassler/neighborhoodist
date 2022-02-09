@@ -150,15 +150,34 @@
         }
         .streetview- {
           display: inline-block;
+
+          a::after {
+            font-family: "FontAwesome"; 
+            font-size: 16px;
+            content: "\f3c5";
+            margin-left: 5px;
+            display: inline-block;
+            color: #e01a31;
+          }
         }
         .home-info--meta--bottom {
           font-family: $sans-serif;
           font-size: 14px;
           font-weight: 600;
+          color: #000;
 
           .status, a {
             display: inline-block;
             padding-right: 10px;
+          }
+          a::after {
+            font-family: "Font Awesome\ 5 Free"; 
+            font-size: 16px;
+            content: "\f015";
+            margin-left: 5px;
+            display: inline-block;
+            color: #e01a31;
+            
           }
         }
       }
@@ -194,5 +213,31 @@
     max-width: 1440px;
     margin: 0 auto;
     padding-top: 82px;
+    
+    h2, p {
+      max-width: 100% !important;
+      width: 100% !important;
+    }
+    h2 {
+      font-family: $sans-serif-alt;
+      font-size: 45px;
+      line-height: 1.56;
+    }
+    p {
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 2;
+    }
+    .image-caption {
+      font-size: 12px;
+      font-weight: 300;
+      line-height: 1.67;
+      margin-top: 16px;
+    }
+    blockquote i {
+      font-size: 32px;
+      font-weight: 300;
+      line-height: 48px;
+    }
   }
 }
