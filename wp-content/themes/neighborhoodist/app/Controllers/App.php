@@ -48,25 +48,32 @@ class App extends Controller
     public function getRelatedContent()
     {
         $overrideIDs = get_field('more_featured_homes_overrides');
-        if (count($overrideIDs) > 0 ){
+        if ($overrideIDs !== null && count($overrideIDs) > 0 ){
             $overrideargs = array(
             'post_type' => ['home'],
             'post__in'      => $overrideIDs
             );
             $overridequery = new WP_Query($overrideargs);
-
-        }
+            $relatedargs = array(
+                'posts_per_page'	=> 3 - count($overrideIDs),
+                'post_type'		=> ['home'],
+                'post__not_in'      => $overrideIDs
+                // 'meta_key'		=> 'color',
+                // 'meta_value'	=> 'red'
+            );
+        } else {
         $relatedargs = array(
-            'posts_per_page'	=> 3 - count($overrideIDs),
+            'posts_per_page'	=> 3 ,
             'post_type'		=> ['home'],
             'post__not_in'      => $overrideIDs
             // 'meta_key'		=> 'color',
             // 'meta_value'	=> 'red'
         );
+    }
         // query
         $relatedquery = new WP_Query( $relatedargs );
 
-        if (count($overrideIDs) > 0){
+        if ($overrideIDs !== null && count($overrideIDs) > 0){
             $wp_query = new WP_Query();
             $wp_query->posts = array_merge( $overridequery->posts, $relatedquery ->posts );
 
@@ -74,7 +81,7 @@ class App extends Controller
             $wp_query->post_count = $overridequery->post_count + $relatedquery ->post_count;
             return $wp_query;
         }
-        return $$relatedquery;
+        return $relatedquery;
     }
     /**
      * Outputs an image from ACF ID.

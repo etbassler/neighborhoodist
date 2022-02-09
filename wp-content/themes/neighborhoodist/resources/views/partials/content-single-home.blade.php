@@ -30,12 +30,12 @@ $realtor = $agent_override[0];
       <span class="contact-info-header">Contact</span>
         <div class="contact-info">
           @php if (get_field('phone_number', $realtor->ID)) { @endphp
-            <a href="tel:@php echo get_field('phone_number', $realtor->ID) @endphp">
+            <a href="tel:@php echo get_field('phone_number', $realtor->ID) @endphp" class="d-block">
               @php echo get_field('phone_number', $realtor->ID) @endphp
             </a>
           @php } @endphp
           @php if (get_field('email', $realtor->ID)) { @endphp
-            <a href="mailto:@php echo get_field('email', $realtor->ID) @endphp">
+            <a href="mailto:@php echo get_field('email', $realtor->ID) @endphp" class="d-block">
               @php echo get_field('email', $realtor->ID) @endphp
             </a>
           @php } @endphp
