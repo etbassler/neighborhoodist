@@ -47,8 +47,9 @@ class App extends Controller
 
     public function getRelatedContent()
     {
+        $neighborhood = get_field('connections');
         $overrideIDs = get_field('more_featured_homes_overrides');
-        if ($overrideIDs !== null && count($overrideIDs) > 0 ){
+        if ($overrideIDs !== null && $overrideIDs !== '' && count($overrideIDs) > 0 ){
             $overrideargs = array(
             'post_type' => ['home'],
             'post__in'      => $overrideIDs
@@ -57,23 +58,32 @@ class App extends Controller
             $relatedargs = array(
                 'posts_per_page'	=> 3 - count($overrideIDs),
                 'post_type'		=> ['home'],
-                'post__not_in'      => $overrideIDs
-                // 'meta_key'		=> 'color',
-                // 'meta_value'	=> 'red'
+                'post__not_in'      => $overrideIDs,
+                'meta_query'       => array(
+                    array(
+                        'key'      => 'connections',
+                        'value'    => $neighborhood[0],
+                        'compare'  => 'LIKE'
+                    )
+                ),
             );
         } else {
         $relatedargs = array(
             'posts_per_page'	=> 3 ,
             'post_type'		=> ['home'],
-            'post__not_in'      => $overrideIDs
-            // 'meta_key'		=> 'color',
-            // 'meta_value'	=> 'red'
+            'post__not_in'      => $overrideIDs,
+            'meta_query'       => array(
+                array(
+                    'key'      => 'connections',
+                    'value'    => $neighborhood[0],
+                    'compare'  => 'LIKE'
+                )
+            ),
         );
     }
         // query
         $relatedquery = new WP_Query( $relatedargs );
-
-        if ($overrideIDs !== null && count($overrideIDs) > 0){
+        if ($overrideIDs !== null && $overrideIDs !== '' && count($overrideIDs) > 0){
             $wp_query = new WP_Query();
             $wp_query->posts = array_merge( $overridequery->posts, $relatedquery ->posts );
 
