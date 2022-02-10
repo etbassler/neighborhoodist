@@ -152,12 +152,15 @@
           display: inline-block;
 
           a::after {
-            font-family: "FontAwesome"; 
-            font-size: 16px;
-            content: "\f3c5";
+            background: url("/wp-content/themes/neighborhoodist/resources/assets/images/map_pin.svg") no-repeat center;
+            width: 20px;
+            height: 20px;
+            content: '';
             margin-left: 5px;
             display: inline-block;
             color: #e01a31;
+            vertical-align: bottom;
+            margin-bottom: 3px;
           }
         }
         .home-info--meta--bottom {
@@ -171,12 +174,15 @@
             padding-right: 10px;
           }
           a::after {
-            font-family: "Font Awesome\ 5 Free"; 
-            font-size: 16px;
-            content: "\f015";
+            background: url("/wp-content/themes/neighborhoodist/resources/assets/images/house.svg") no-repeat center;
+            width: 20px;
+            height: 20px;
+            content: '';
             margin-left: 5px;
             display: inline-block;
             color: #e01a31;
+            vertical-align: bottom;
+            margin-bottom: 3px;
             
           }
         }
@@ -250,5 +256,19 @@
       width: 100% !important;
       max-width: 100% !important;
     }
+  }
+  .archive-partial--image img {
+    width: 386px;
+    height: 302px;
+    object-fit: cover;
+  }
+  .archive-partial--info h3.title {
+    font-family: $sans-serif-alt;
+    font-size: 26px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-top: 5px;
+    padding-left: 19px;
+    padding-right: 19px;
   }
 }
