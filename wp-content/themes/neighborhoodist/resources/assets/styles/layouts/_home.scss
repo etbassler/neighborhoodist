@@ -120,9 +120,9 @@
 
       .container {
         background-color: transparent;
-        max-width: 1440px;
+        max-width: 1300px;
       }
-
+      
       .home-info {
         background: white;
         padding: 31px;
@@ -210,13 +210,20 @@
     }
   }
   .page-content--home {
-    max-width: 1440px;
+    
     margin: 0 auto;
     padding-top: 82px;
-    
+    .container {
+      max-width: 1300px;
+    }
+    .gallery .container {
+      max-width: 1440px;
+    }
+    .image-section .row {
+      justify-content: center;
+    }
     h2, p {
-      max-width: 100% !important;
-      width: 100% !important;
+      max-width: 772px;
     }
     h2 {
       font-family: $sans-serif-alt;
@@ -238,6 +245,10 @@
       font-size: 32px;
       font-weight: 300;
       line-height: 48px;
+    }
+    .container blockquote p, .container blockquote {
+      width: 100% !important;
+      max-width: 100% !important;
     }
   }
 }
