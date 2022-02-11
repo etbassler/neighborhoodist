@@ -1,21 +1,30 @@
 .footer {
+  z-index: 10;
+  padding: 20px 0;
+  h3 {
+    font-family: $sans-serif-alt;
+    font-size: 45px;
+    font-weight: 500;
+    line-height: 1.02;
+    letter-spacing: 1px;
+  }
   padding-top: 100px;
   background-color: #d8d8d8;
   color: #000;
   position: relative;
-  height: 451px;
   &::after {
     content: "";
     width: 520px;
-    height: 451px;
+    height: 100%;
     display: block;
     background: url("/wp-content/themes/neighborhoodist/resources/assets/images/Footer-BG.png")
       no-repeat center;
-    background-size: contain;
+    background-size: cover;
     opacity: 0.5;
     position: absolute;
     top: 0;
     right: 0;
+    z-index: -1;
   }
   .brand {
     width: 200px;
@@ -81,17 +90,18 @@
         color: #000;
       }
     }
+    .footer-info--row:last-child {
+      margin-top: 28px;
+    }
   }
 
   .footer-social {
     display: flex;
 
     a {
-      background-color: map-get($theme-colors, "primary");
-      width: 32px;
-      height: 32px;
+      width: 35px;
+      height: 35px;
       display: block;
-      padding: 5px;
 
       img {
         object-fit: contain;
@@ -104,11 +114,42 @@
       }
     }
   }
-
+  .row {
+    z-index: -1;
+  }
   form {
     input:not([type="submit"]),
     select {
       background-color: map-get($theme-colors, "light-gray");
     }
+    input:not([type="submit"]), select {
+      background: #ebebeb;
+      border: 0;
+    }
+    label, .gfield_description {
+      font-family: $sans-serif;
+      font-size: 12px;
+      font-weight: 300;
+      line-height: 1.67;
+      letter-spacing: 0.38px;
+    }
+
+  option, select#input_1_5 {
+    font-family: $sans-serif;
+    font-size: 10px;
+    line-height: 2;
+    letter-spacing: 0.31px;
+    }
+  }
+  #gform_submit_button_1 {
+    background: #e01a31;
+    font-size: 14px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 8px 10px 7px;
+    color: #fff;
+    border: 0;
   }
 }
