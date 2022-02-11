@@ -66,7 +66,7 @@
             "elements": "",
             "min": "",
             "max": "",
-            "return_format": "object"
+            "return_format": "id"
         },
         {
             "key": "field_61f2276c1d3ba",
@@ -114,5 +114,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1643602499
+    "modified": 1644546911
 }

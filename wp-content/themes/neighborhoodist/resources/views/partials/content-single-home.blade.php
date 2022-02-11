@@ -15,8 +15,7 @@
       </div>
       <div class="col-md-6">
     <div class="home-subheader--author">
-      @php var_dump($connections) @endphp
-      @php $realtor = get_field('realtor_neighborhood_connection',$connections[0]->ID)[0] @endphp
+      @php $realtor = get_field('realtor_neighborhood_connection',$connections[0])[0] @endphp
       @php if ($agent_override) {
 $realtor = $agent_override[0];
   } @endphp

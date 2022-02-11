@@ -32,7 +32,7 @@
           </div>
           <div class="footer-info--row">
             <span>Social</span>
-              @if (get_field('stats'))
+              @if (get_field('footer_social','option'))
               <div class="footer-social">
               @foreach (get_field('footer_social','option') as $social)
               <a href="{{$social['link']['url']}}" target="{{$social['link']['target']}}">
@@ -52,7 +52,8 @@
       </div>
       </div>
       <div class="col-md-6">
-This is the form
+      <h3>@php the_field('footer_form_header','option') @endphp</h3>
+        @php gravity_form(get_field('footer_form','option')['id'], false, false); @endphp
         </div>
     </div>
     <div class="footer-bottom">

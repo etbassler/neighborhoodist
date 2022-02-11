@@ -5,11 +5,12 @@
   position: relative;
   height: 451px;
   &::after {
-    content: '';
+    content: "";
     width: 520px;
     height: 451px;
     display: block;
-    background: url("/wp-content/themes/neighborhoodist/resources/assets/images/Footer-BG.png") no-repeat center;
+    background: url("/wp-content/themes/neighborhoodist/resources/assets/images/Footer-BG.png")
+      no-repeat center;
     background-size: contain;
     opacity: 0.5;
     position: absolute;

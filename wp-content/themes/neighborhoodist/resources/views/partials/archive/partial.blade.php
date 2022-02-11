@@ -6,7 +6,7 @@
     </div>
 @endif
 <div class="archive-partial--info">
-    <span class="neighborhood-title">{{$connections[0]->post_title}}</span>
+    <span class="neighborhood-title">{{get_the_title($connections[0])}}</span>
     <h3 class="title">{!! $title_override ? $title_override : App::title() !!}</h1>
 </div>
 </div>

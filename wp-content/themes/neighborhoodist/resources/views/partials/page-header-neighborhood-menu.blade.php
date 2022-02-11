@@ -2,10 +2,10 @@
   <div class="container">
     <div class="row">
       <nav class="navbar navbar-expand-lg navbar-light p-0">
-        <a class="brand navbar-brand" href="{{get_permalink($connections[0]->ID)}}">
+        <a class="brand navbar-brand" href="{{get_permalink($connections[0])}}">
         <div class="neighborhood-menu-title">
-        {!! App::acfimg(get_field('neighborhood_menu_icon',$connections[0]->ID),'large') !!}
-          <h2>{{$connections[0]->post_title}}</h2>
+        {!! App::acfimg(get_field('neighborhood_menu_icon',$connections[0]),'large') !!}
+          <h2>{{ get_the_title($connections[0])}}</h2>
         </div>
         </a>
 
@@ -15,7 +15,7 @@
 
         <div class="collapse navbar-collapse justify-content-lg-end" id="navbarNeighborhoodContent">
         {!! wp_nav_menu(array(
-            'menu'    => get_field('neighborhood_menu', $connections[0]->ID)->ID,
+            'menu'    => get_field('neighborhood_menu', $connections[0])->ID,
             'menu_class'        => 'navbar-nav',
             'walker'            => new \App\wp_bootstrap4_navwalker(),
             'depth' => 2

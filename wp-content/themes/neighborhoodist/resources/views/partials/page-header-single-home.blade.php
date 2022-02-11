@@ -4,7 +4,7 @@
       <div class="col-md-7">
         <div class="home-info">
         <div class="top-term">{!! App::get_post_top_term( get_the_ID()) !!}</div>
-          <span class="header-eyebrow"> {{ $connections[0]->post_title}}</span>
+          <span class="header-eyebrow"> {{ get_the_title($connections[0])}}</span>
           <h2 class="h1">{!! $title_override ? $title_override : App::title() !!}</h2>
           <div class="streetview-"><a href="{{$streetview_url}}">Street View</a></div>
 
