@@ -3,5 +3,7 @@
 @section('content')
   @include('partials.page-header-archive')
 
- @php echo do_shortcode('[facetwp template="blog_posts"]') @endphp
+  <div class="page-content">
+  @php echo do_shortcode('[facetwp template="blog_posts"]') @endphp
+</div>
 @endsection
