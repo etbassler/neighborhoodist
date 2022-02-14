@@ -158,3 +158,19 @@
     max-width: 890px !important;
   }
 }
+@media screen and (max-width:992px) {
+  .container {
+    max-width: 720px!important;
+  }
+  .container .row {
+    margin: 0;
+    padding: 10px;
+  }
+  .site-header .navbar {
+    margin: 0 10px;
+    padding: 10px;
+  }
+  .site-header .brand {
+    margin-left: 0;
+  }
+}
