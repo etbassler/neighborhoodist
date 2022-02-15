@@ -242,11 +242,17 @@
 
     
     &.home-header {
-      background: #f7f7f7;
-
+    
       .container {
-        background-color: transparent;
+        background: #f7f7f7;
         max-width: 1300px;
+      }
+      .home--magazine-info {
+        position: relative;
+        height: 129px;
+        .magazine-text {
+          margin-left: 130px;
+        }
       }
       .home--magazine-info img {
         width: 99px;
@@ -254,9 +260,10 @@
         object-fit: contain;
         margin: 0;
         margin-right: 23px;
+        position: absolute;
+        bottom: -50px;
       }
       .home-info {
-        background: white;
         padding: 31px;
         position: relative;
         .top-term {
@@ -366,3 +373,45 @@
 }
 
 
+
+  
+
+@media screen and (max-width:1350px) {
+  &.home-header-bg {
+    padding-bottom: 50px !important;
+  }
+}
+@media screen and (max-width:1105px) {
+  &.home-header-bg {
+    padding-bottom: 25px !important;
+    .container {
+      margin-top: -100px;
+    }
+  }
+}
+@media screen and (max-width:998px) {
+  &.home-header-bg {
+    padding: 0 !important;
+    .container .col-md-6 {
+      flex: 0 0 100%;
+      max-width: 100%;
+      padding: 0;
+    }
+    .bg-container {
+      position: relative !important;
+    }
+  }
+  .home-header {
+    .col-md-7, .col-md-5 {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+    .home-info {
+      margin-top: -100px;
+      z-index: 10;
+    }
+    .row {
+      flex-direction: column-reverse;
+    }
+  }
+}
