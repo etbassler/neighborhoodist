@@ -3,7 +3,9 @@
     <div class="row">
       <div class="col-md-7">
         <div class="home-info">
-        <div class="top-term">{!! App::get_post_top_term( get_the_ID()) !!}</div>
+        @if ( App::get_post_top_term( get_the_ID()) === "Home of the Month")
+        <div class="top-term">{!! App::get_post_top_term( get_the_ID()) === "Home of the Month" ? App::get_post_top_term( get_the_ID()) : '' !!}</div>
+        @endif
           <span class="header-eyebrow"> {{ get_the_title($connections[0])}}</span>
           <h2 class="h1">{!! $title_override ? $title_override : App::title() !!}</h2>
           <div class="streetview-"><a href="{{$streetview_url}}">Street View</a></div>
