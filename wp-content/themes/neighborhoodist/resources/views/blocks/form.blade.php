@@ -6,7 +6,7 @@
   Keywords: cta form
   Mode: edit
   Align: full
-  PostTypes: page post home neighborhood
+  PostTypes: page post home neighborhood realtor
   SupportsAlign: false
   SupportsMode: false
   SupportsMultiple: true

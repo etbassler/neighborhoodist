@@ -6,7 +6,7 @@
   Keywords: before after image
   Mode: edit
   Align: full
-  PostTypes: page post home neighborhood
+  PostTypes: page post home neighborhood realtor
   SupportsAlign: true
   SupportsMode: false
   SupportsMultiple: true
