@@ -30,3 +30,12 @@
   padding-left: 19px;
   padding-right: 19px;
 }
+
+@media screen and (max-width:767px) {
+  .related-content {
+    padding-top: 150px !important;
+    .row {
+      display: grid;
+    }
+  }
+}

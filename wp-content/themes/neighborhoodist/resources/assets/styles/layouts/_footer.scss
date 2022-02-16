@@ -1,6 +1,7 @@
 .footer {
   z-index: 10;
   padding: 20px 0;
+  font-size: 16px;
   h3 {
     font-family: $sans-serif-alt;
     font-size: 45px;
@@ -151,5 +152,13 @@
     padding: 8px 10px 7px;
     color: #fff;
     border: 0;
+  }
+}
+
+
+
+@media screen and (max-width: 767px) {
+  .footer-bottom {
+    justify-content: center;
   }
 }

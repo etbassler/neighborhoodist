@@ -46,6 +46,12 @@
       text-transform: uppercase;
       color: #e01b31;
     }
+    .container::after {
+      content: '';
+      display: block;
+      width: 100%;
+      clear: both;
+    }
   }
 
   .home-info {
@@ -383,7 +389,7 @@
 }
 @media screen and (max-width:1105px) {
   &.home-header-bg {
-    padding-bottom: 25px !important;
+    padding-bottom: 0px !important;
     .container {
       margin-top: -100px;
     }
@@ -412,6 +418,12 @@
     }
     .row {
       flex-direction: column-reverse;
+    }
+  }
+  .home-subheader {
+    .container .col-md-6 {
+      flex: 0 0 100%;
+      max-width: 100%;
     }
   }
 }
