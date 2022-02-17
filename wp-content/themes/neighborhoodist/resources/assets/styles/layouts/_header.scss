@@ -3,7 +3,6 @@
 
   .container {
     max-width: 1300px;
-    padding: 0;
     
   }
   .navbar-toggler-icon {
@@ -103,7 +102,8 @@
 
   .container {
     max-width: 1300px;
-    padding: 0;
+    padding-left: 15px;
+    padding-right: 15px;
   }
   .neighborhood-menu-title {
     display: flex;
@@ -143,6 +143,12 @@
     color: #000;
   }
 }
+
+.container {
+  max-width: 1300px;
+}
+
+
 @media screen and (max-width:1400px) {
   .container {
     max-width: 1140px !important;

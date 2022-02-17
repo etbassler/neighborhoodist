@@ -9,6 +9,7 @@
     margin-bottom: 200px;
     .container {
       margin-top: 450px;
+      max-width: 972px !important;
       .row {
         background: #fff;
         padding: 48px 56px;
@@ -35,6 +36,9 @@
           line-height: 1.43;
           letter-spacing: 0.44px;
           color: #000;
+        }
+        img {
+          margin-bottom: 1rem;
         }
       }
     }
@@ -93,7 +97,7 @@
 
   .page-header {
     .container {
-      background-color: rgba(216, 216, 216, 0.5);
+      background-color: #f7f7f7;
     }
 
     .home--magazine-info {
@@ -146,14 +150,17 @@
     &.home-header-bg {
       background-color: #f7f7f7;
       padding-top: 33vw;
-      padding-bottom: 70px;
+      padding-bottom: 29px;
       position: relative;
 
       .container {
         background-color: transparent;
         max-width: 1300px;
       }
-      
+      .col-md-6:first-child {
+       background-color: #fff;
+       padding: 0;
+      }
       .home-info {
         background: white;
         padding: 31px;
@@ -339,7 +346,7 @@
       max-width: 1300px;
     }
     .gallery .container {
-      max-width: 1440px;
+      max-width: 1440px!important;
     }
     .image-section .row {
       justify-content: center;

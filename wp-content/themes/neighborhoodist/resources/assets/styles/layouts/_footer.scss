@@ -1,7 +1,10 @@
 .footer {
   z-index: 10;
-  padding: 20px 0;
   font-size: 16px;
+  .container {
+    padding-right: 0;
+    padding-left: 0;
+  }
   h3 {
     font-family: $sans-serif-alt;
     font-size: 45px;
@@ -153,10 +156,15 @@
     color: #fff;
     border: 0;
   }
+
 }
 
 
-
+@media screen and (max-width:1440px) {
+  footer .container {
+    max-width: 1300px !important;
+  }
+}
 @media screen and (max-width: 767px) {
   .footer-bottom {
     justify-content: center;
