@@ -94,6 +94,25 @@
             "min": "",
             "max": "",
             "return_format": "object"
+        },
+        {
+            "key": "field_620ddd3ece8f5",
+            "label": "City",
+            "name": "neighborhood_city",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
         }
     ],
     "location": [
@@ -114,5 +133,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1644546911
+    "modified": 1645075986
 }

@@ -1,15 +1,29 @@
 <div class="page-header">
+<div class="bg-container">
+    @if (get_post_thumbnail_id())
+      {!! App::acfimg(get_post_thumbnail_id(),'large') !!}
+      @endif
+  </div>
   <div class="container">
     <div class="row">
-      <div class="col {{get_post_thumbnail_id() ? 'text-left' : ''}}">
-        <span class="header-eyebrow"> {!! App::get_post_top_term( get_the_ID()) !!}</span>
-        <h2 class="h1">{!! $title_override ? $title_override : App::title() !!}</h2>
+      <div class="col">
+        <div class="neighborhood-title">
+        {!! App::acfimg(get_field('neighborhood_menu_icon'),'large') !!}
+          <h2>{{ get_the_title()}}</h2>
+          <span class="neighborhood-city"> {!! $neighborhood_city !!}</span>
+        </div>
+        <nav class="navbar navbar-dark p-0">
+        <div class="" id="navbarNeighborhoodContent">
+        {!! wp_nav_menu(array(
+            'menu'    => get_field('neighborhood_menu')->ID,
+            'menu_class'        => 'navbar-nav',
+            'walker'            => new \App\wp_bootstrap4_navwalker(),
+            'depth' => 2
+          )) !!}
+        </div>
+      </nav>
       </div>
-      @if (get_post_thumbnail_id())
-      <div class="col-md-3 featured-image">
-      {!! App::acfimg(get_post_thumbnail_id(),'large') !!}
-      </div>
-      @endif
+
     </div>
 
   </div>
