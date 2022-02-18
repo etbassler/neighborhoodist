@@ -7,16 +7,22 @@
         .featured-image {
             padding-left: 0;
             img {
-                object-fit: contain;
+                object-fit: cover;
                 width: 399px;
                 height: 505px;
             }
         }
         .realtor-label {
+            display: block;
             font-size: 14px;
             font-weight: bold;
             letter-spacing: 0.5px;
             text-transform: uppercase;
+            margin-bottom: 11px;
+        & + img {
+                object-fit: contain;
+                height: 78px;
+            }
         }
         .realtor-description {
             font-size: 16px;
@@ -24,5 +30,43 @@
             line-height: 2;
             letter-spacing: 0.5px;
         }
+    }
+    .realtor-cta {
+        h3 {
+            font-family: $sans-serif;
+            font-size: 14px;
+            font-weight: bold;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+        }
+        .btn {
+            background: #e01a31;
+            font-size: 14px;
+            font-weight: 800;
+            letter-spacing: 0.5px;
+            text-align: center;
+            text-transform: uppercase;
+            padding: 8px 10px 7px;
+            color: #fff;
+            border: 0;
+            text-decoration: none;
+        }
+    }
+    .contact-info-header {
+            font-family: $sans-serif;
+            font-size: 14px;
+            font-weight: bold;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+    }
+    .contact-info-content a {
+        font-size: 14px;
+        text-decoration: none;
+    }
+}
+
+article {
+    .image-section .row {
+        justify-content: center;
     }
 }
