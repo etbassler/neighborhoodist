@@ -133,6 +133,10 @@
     }
 
     &.home-header {
+      .col-md-5 img {
+        object-fit: cover;
+        height: 100%;
+      }
       .home--magazine-info {
         justify-content: flex-start;
         
@@ -150,7 +154,7 @@
     &.home-header-bg {
       background-color: #f7f7f7;
       padding-top: 33vw;
-      padding-bottom: 29px;
+      padding-bottom: 29px !important;
       position: relative;
 
       .container {
@@ -257,7 +261,9 @@
     &.home-header {
     
       .container {
-        background: #f7f7f7;
+        .row {
+          background: #f7f7f7;
+        }
         max-width: 1300px;
       }
       .home--magazine-info {
