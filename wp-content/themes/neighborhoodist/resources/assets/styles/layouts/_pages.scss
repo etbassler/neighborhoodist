@@ -7,9 +7,12 @@
         .featured-image {
             padding-left: 0;
             img {
-                object-fit: cover;
                 width: 399px;
                 height: 505px;
+                object-fit: contain;
+            }
+            & + .col-md-8 {
+                padding-top: 74px;
             }
         }
         .realtor-label {
@@ -70,3 +73,4 @@ article {
         justify-content: center;
     }
 }
+
