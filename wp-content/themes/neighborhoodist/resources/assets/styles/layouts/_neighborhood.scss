@@ -1,8 +1,11 @@
 .single-neighborhood {
+  .site-header{
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0) 99%);
+  }
   .page-header {
     .bg-container {
       position: absolute;
-      height: 80%;
+      height: 641px;
       width: 100%;
       top: 0;
       left: 0;
@@ -13,5 +16,68 @@
         height: 100%;
       }
     }
+    .container {
+      height: 641px;
+      display: flex;
+      justify-content: center;
+      .row {
+        align-self: center;
+      }
+    }
+    .neighborhood-title {
+      font-family: $sans-serif-alt;
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      flex-direction: column;
+      h2 {
+        font-size: 144px;
+        text-align: center;
+        color: #fff;
+      }
+    }
+    .neighborhood-city {
+      font-size: 48px;
+      text-align: center;
+      color: #fff;
+      text-transform: uppercase;
+    }
+    .menu-mission-hills-container .navbar-nav {
+      justify-content: space-evenly;
+      flex-direction: row;
+      flex-wrap: wrap;
+      margin-top: 110px;
+      a {
+        font-family: $sans-serif-alt;
+        font-size: 26px;
+        text-align: center;
+        color: #fff;
+        padding: 0.5rem 1rem;
+        text-decoration: none;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+  .site-header {
+    background: transparent;
+    #menu-primary-menu a {
+      color: #fff;
+    }
+  }
+  article .row > * {
+    max-width: 1300px !important;
+    font-family: $sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 2;
+    letter-spacing: 0.5px;
+  }
+}
+
+@media screen and (max-width: 548px) {
+  .neighborhood-title h2 {
+    font-size: 45px !important;
   }
 }
