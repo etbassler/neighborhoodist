@@ -219,6 +219,7 @@ function fontawesome() {
 
   function restrict_blocks( $allowed_blocks) {
     $allowed_blocks = array(
+        'acf/two-column-text',
         'acf/before-after',
         'acf/form',
         'acf/text',

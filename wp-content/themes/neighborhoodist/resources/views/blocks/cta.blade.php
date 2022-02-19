@@ -7,7 +7,7 @@
   Mode: edit
   Align: full
   PostTypes: page post home neighborhood realtor
-  SupportsAlign: true
+  SupportsAlign: full
   SupportsMode: false
   SupportsMultiple: true
   EnqueueStyle: styles/main.css
