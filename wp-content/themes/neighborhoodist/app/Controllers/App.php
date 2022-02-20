@@ -112,7 +112,11 @@ class App extends Controller
     public function acflink( $array = [],  $classes = '' ) {
         if( empty($array))
         return;
-      echo '<a class="'. $classes .'" href="'. $array->url .'" target="'. $array->target .'">'. $array->title .'</a>';
+        if (is_array($array)){
+            echo '<a class="'. $classes .'" href="'. $array['url'] .'" target="'. $array['target'] .'">'. $array['title'] .'</a>';
+        } else {
+            echo '<a class="'. $classes .'" href="'. $array->url .'" target="'. $array->target .'">'. $array->title .'</a>';
+        }
     }
 
     public function get_post_top_term($id = '') {
