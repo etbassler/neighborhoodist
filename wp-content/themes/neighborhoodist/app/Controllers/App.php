@@ -121,12 +121,17 @@ class App extends Controller
 
     public function get_post_top_term($id = '') {
         $term_list = wp_get_post_terms($id, 'category', array("fields" => "names"));
-
-        if ($term_list[0] !== "Uncategorized"){
-            return $term_list[0];
+		
+		//~ print_r($term_list);
+		if( !empty($term_list) ) {
+			if ($term_list[0] !== "Uncategorized"){
+				return $term_list[0];
+			} else {
+				return false;
+			}
         } else {
-            return false;
-        }
+			return false;
+		}
     }
 
     public function get_post_partial_logo($id = '') {

@@ -8,9 +8,9 @@
       "./scripts/customizer.js"
     ]
   },
-  "publicPath": "/app/themes/neighborhoodist",
-  "devUrl": "neighborhoodist.local",
-  "proxyUrl": "http://localhost:3000",
+  "publicPath": "/wp-content/themes/neighborhoodist",
+  "devUrl": "http://nh.blitzmore.com",
+  "proxyUrl": "http://157.245.99.74:3000",
   "cacheBusting": "[name]_[hash:8]",
   "watch": [
     "app/**/*.php",
