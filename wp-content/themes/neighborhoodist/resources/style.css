@@ -12,117 +12,23 @@ License URI:        http://opensource.org/licenses/MIT
 */
 /********************************Custom-fonts********************************/
 @font-face {
-    font-family: 'Inter';
-    src: url('fonts/Inter-Regular.eot');
-    src: url('fonts/Inter-Regular.eot?#iefix') format('embedded-opentype'),
-        url('fonts/Inter-Regular.woff2') format('woff2'),
-        url('fonts/Inter-Regular.woff') format('woff'),
-        url('fonts/Inter-Regular.ttf') format('truetype'),
-        url('fonts/Inter-Regular.svg#Inter-Regular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-@font-face {
-  font-family: "OpenSans-Bold";
-  src: url("fonts/OpenSans-Bold.eot"); /* IE9 Compat Modes */
-  src: url("fonts/OpenSans-Bold.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
-    url("fonts/OpenSans-Bold.otf") format("opentype"), /* Open Type Font */
-    url("fonts/OpenSans-Bold.svg") format("svg"), /* Legacy iOS */
-    url("fonts/OpenSans-Bold.ttf") format("truetype"), /* Safari, Android, iOS */
-    url("fonts/OpenSans-Bold.woff") format("woff"), /* Modern Browsers */
-    url("fonts/OpenSans-Bold.woff2") format("woff2"); /* Modern Browsers */
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "OpenSans-SemiBold";
-  src: url("fonts/OpenSans-SemiBold.eot"); /* IE9 Compat Modes */
-  src: url("fonts/OpenSans-SemiBold.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
-    url("fonts/OpenSans-SemiBold.otf") format("opentype"), /* Open Type Font */
-    url("fonts/OpenSans-SemiBold.svg") format("svg"), /* Legacy iOS */
-    url("fonts/OpenSans-SemiBold.ttf") format("truetype"), /* Safari, Android, iOS */
-    url("fonts/OpenSans-SemiBold.woff") format("woff"), /* Modern Browsers */
-    url("fonts/OpenSans-SemiBold.woff2") format("woff2"); /* Modern Browsers */
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "OpenSans-Regular";
-  src: url("fonts/OpenSans-Regular.eot"); /* IE9 Compat Modes */
-  src: url("fonts/OpenSans-Regular.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
-    url("fonts/OpenSans-Regular.otf") format("opentype"), /* Open Type Font */
-    url("fonts/OpenSans-Regular.svg") format("svg"), /* Legacy iOS */
-    url("fonts/OpenSans-Regular.ttf") format("truetype"), /* Safari, Android, iOS */
-    url("fonts/OpenSans-Regular.woff") format("woff"), /* Modern Browsers */
-    url("fonts/OpenSans-Regular.woff2") format("woff2"); /* Modern Browsers */
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-    font-family: 'Open Sans';
-    src: url('fonts/OpenSans-Light.eot');
-    src: url('fonts/OpenSans-Light.eot?#iefix') format('embedded-opentype'),
-        url('fonts/OpenSans-Light.woff2') format('woff2'),
-        url('fonts/OpenSans-Light.woff') format('woff'),
-        url('fonts/OpenSans-Light.ttf') format('truetype'),
-        url('fonts/OpenSans-Light.svg#OpenSans-Light') format('svg');
-    font-weight: 300;
-    font-style: normal;
-    font-display: swap;
+font-family: 'Inter';
+src: url('fonts/Inter-Regular.eot');
+src: url('fonts/Inter-Regular.eot?#iefix') format('embedded-opentype'),
+url('fonts/Inter-Regular.woff2') format('woff2'),
+url('fonts/Inter-Regular.woff') format('woff'),
+url('fonts/Inter-Regular.ttf') format('truetype'),
+url('fonts/Inter-Regular.svg#Inter-Regular') format('svg');
+font-weight: normal;
+font-style: normal;
+font-display: swap;
 }
 
-/******************************** /Custom-fonts********************************/
 
 
 
-/********************************Custom-Css********************************/
-
-/******************************Header&Banner****************************/
-header.site-header a.brand.navbar-brand { margin-left: 60px; margin-top: 5px; } 
-.site-header .navbar .navbar-nav li a { font-family: 'Inter' !important; font-size: 14px; margin-right: 25px; color: #000000; }
-.home-header-bg .top-term { font-size: 12px; line-height: 17px; font-family: "OpenSans-Bold"; padding-left: 12px !important; padding-right: 12px !important; }
-.single-home .page-header.home-header-bg .home-info span.header-eyebrow { font-size: 14px; font-family: "OpenSans-SemiBold"; letter-spacing: 0.5px; }
-.single-home .page-header.home-header-bg .home-info .streetview- a { font-size: 14px; font-family: "OpenSans-Regular"; padding-left: 3px; }
-.single-home .page-header.home-header-bg .home-info .streetview- a::after { width: 13px !important; }
-
-.single-home .page-header.home-header-bg .home-info .home-info--meta { border-top: 1px solid rgb(161 161 161 / 50%); }
-
-
-.single-home .page-header.home-header-bg .home-info .home-info--meta .rooms  { border-right: 1px solid rgb(161 161 161 / 50%); }
-.single-home .page-header.home-header-bg .home-info .home-info--meta .space  { border-right: 1px solid rgb(161 161 161 / 50%); }
-.single-home .page-header.home-header-bg .home-info--meta div { color: #353535; font-size: 18px; font-family: "OpenSans-SemiBold"; }
-.single-home .page-header.home-header-bg .home-info--meta--bottom div, .single-home .page-header.home-header-bg .home-info--meta--bottom a { color: #000000; font-size: 14px; font-family: "OpenSans-Regular"; font-weight: 400; }
-.single-home .page-header.home-header-bg .home-info--meta--bottom a::after { width: 17px !important; margin-bottom: 1px !important; }
-.page-header.home-header-bg .home--magazine-info img { box-shadow: 3px 3px 20px 0 rgb(0 0 0 / 38%); }
-/****************************** /Header&Banner****************************/
-
-
-/******************************King of the Hills****************************/
-body.single-home .page-content.page-content--home { padding-top: 60px; }
-body.single-home .page-content.page-content--home p { font-size: 16px; line-height: 32px; letter-spacing: 0.5px; color: #353535; font-family: 'Open Sans'; font-weight: 300; }
-body.single-home .page-content.page-content--home .custom-hills { margin-bottom: 65px; }
-/****************************** /King of the Hills****************************/
 
 
 
-/******************************Custom-image-vero****************************/
-.custom-image-vero.image-section { background: #f7f7f7;margin-bottom: 65px; }
-.custom-image-vero.image-section .image-caption { color: #353535; font-family: 'Open Sans'; font-weight: 300; line-height: 1.67; letter-spacing: 0.38px; }
-body.single-home .page-content.page-content--home .custom-conqua-tb p {  }
-body.single-home .page-content.page-content--home .custom-conqua-tb blockquote { max-width: 972px !important; line-height: 1.5; color: #000000; font-family: 'Inter'; font-weight: 300; text-align: left;margin-top: 15px; }
-body.single-home .page-content.page-content--home .custom-conqua-tb blockquote p{margin-bottom:10px;}
-
-body.single-home .page-content.page-content--home .custom-conqua-tb { margin-bottom: 50px; }
 
 
-/****************************** /Custom-image-vero****************************/
-
-
-/****************************** Custom-gallery****************************/
-
-body .custom-gallery .gallery-img-wrapper { width: 16.66% !important; }
-
-/****************************** /Custom-gallery****************************/
-
-/******************************** /Custom-Css********************************/
