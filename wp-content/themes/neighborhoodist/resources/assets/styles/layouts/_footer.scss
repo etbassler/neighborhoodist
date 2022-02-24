@@ -12,9 +12,9 @@
     line-height: 1.02;
     letter-spacing: 1px;
   }
-  padding-top: 100px;
+  padding-top: 65px;
   background-color: #d8d8d8;
-  color: #000;
+  color: #000; 
   position: relative;
   &::after {
     content: "";
@@ -41,7 +41,8 @@
     align-items: center;
     font-size: 12px;
     font-weight: 300;
-    margin-top: 86px;
+    margin-top: 15px;
+	padding-bottom: 25px;
     a {
       color: #000;
       text-decoration: none;

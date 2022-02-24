@@ -490,15 +490,16 @@ body.single-home {
 				max-width: 972px !important;
 				line-height: 1.5;
 				color: #000000;
-				font-family: 'Inter';
-				font-weight: 300;
+				font-family: $sans-serif;
+			    font-weight: 300;
 				text-align: left;
 				margin-top: 15px;
+				font-size: 32px !important;
 				p {
 					margin-bottom: 10px;
 				}
 			}
-			margin-bottom: 50px;
+			margin-bottom: 50px; 
 		}
 	}
 }
