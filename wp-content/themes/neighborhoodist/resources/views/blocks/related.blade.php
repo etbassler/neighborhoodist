@@ -25,11 +25,11 @@
     <div class="row">
       @foreach (get_field('related_items') as $r)
         <div class="col-md-4">
-
-        {!! App::acfimg(get_post_thumbnail_id($ID),'large') !!}
-        @php $ID = $r['item']->ID;
-          $type = get_post_type($ID);
+          @php $ID = $r['item']->ID;
+            $type = get_post_type($ID);
           @endphp
+          {!! App::acfimg(get_post_thumbnail_id($ID),'large') !!}
+
           @if ( $type  === "home")
             <div class="top-term">@php echo get_the_title(get_field('connections',$ID)[0])@endphp</div>
           @else
