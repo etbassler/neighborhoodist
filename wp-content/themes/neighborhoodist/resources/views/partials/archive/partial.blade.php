@@ -7,6 +7,6 @@
 @endif
 <div class="archive-partial--info">
     <span class="neighborhood-title">{{get_the_title($connections[0])}}</span>
-    <h3 class="title">{!! $title_override ? $title_override : App::title() !!}</h1>
+    <a href="{{get_permalink($connections[0])}}"><h3 class="title">{!! $title_override ? $title_override : App::title() !!}</h3></a>
 </div>
 </div>

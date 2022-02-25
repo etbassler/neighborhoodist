@@ -35,7 +35,7 @@
           @else
             <div class="top-term">{!! App::get_post_top_term($ID) !!}</div>
           @endif
-        <h3>{{ $r['item']->post_title }}</h3>
+        <a href="@php echo get_permalink($ID)@endphp"><h3>{{ $r['item']->post_title }}</h3></a>
         </div>
       @endforeach
     </div>
