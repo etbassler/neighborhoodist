@@ -3,7 +3,6 @@
 
   .container {
     max-width: 1300px;
-    
   }
   .navbar-toggler-icon {
     background-image: url("/wp-content/themes/neighborhoodist/resources/assets/images/hamburger.svg");
@@ -19,7 +18,6 @@
   }
 
   .brand {
-
     margin-left: 139px;
 
     img {
@@ -144,43 +142,22 @@
   }
 }
 
-.container {
-  max-width: 1300px;
-}
-
-
-@media screen and (max-width:1400px) {
-  .container {
-    max-width: 1140px !important;
-  }
+@media screen and (max-width: 1400px) {
   .single-post .container {
-    padding: 0!important;
+    padding: 0 !important;
   }
 }
-@media screen and (max-width:1240px) {
-  .container {
-    max-width: 998px !important;
-  }
+@media screen and (max-width: 1240px) {
   .single-post .container {
-    padding: 0!important;
+    padding: 0 !important;
   }
 }
-@media screen and (max-width:1100px) {
-  .container {
-    max-width: 890px !important;
-  }
+@media screen and (max-width: 1100px) {
   .single-post .container {
-    padding: 0!important;
+    padding: 0 !important;
   }
 }
-@media screen and (max-width:992px) {
-  .container {
-    max-width: 720px!important;
-  }
-  .container .row {
-    margin: 0;
-    padding: 10px;
-  }
+@media screen and (max-width: 992px) {
   .site-header .navbar {
     margin: 0 10px;
     padding: 10px;
