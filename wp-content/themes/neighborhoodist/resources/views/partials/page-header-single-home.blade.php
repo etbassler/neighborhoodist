@@ -8,8 +8,9 @@
         @endif
           <span class="header-eyebrow"> {{ get_the_title($connections[0])}}</span>
           <h2 class="h1">{!! $title_override ? $title_override : App::title() !!}</h2>
-          <div class="streetview-"><a href="{{$streetview_url}}">Street View</a></div>
-
+          @if ($streetview_url)
+            <div class="streetview-"><a href="{{$streetview_url}}">Street View</a></div>
+          @endif
 
           <div class="home-info--meta">
             <div class="rooms">{{$rooms}}</div>
@@ -26,7 +27,7 @@
           {!! App::acfimg($magazine_cover->ID,'large') !!}
 
           <div class="magazine-text">
-          {{$magazine_text ? $magazine_text : 'Default copy when nothing else is used.'}}
+          {!! $magazine_text ? $magazine_text : 'Default copy when nothing else is used.' !!}
           </div>
         </div>
       </div>
