@@ -258,6 +258,38 @@
             "ui_off_text": ""
         },
         {
+            "key": "field_621853080b299",
+            "label": "Agent Subheader Background Override",
+            "name": "subheader_background",
+            "type": "image",
+            "instructions": "Overrides the default image",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_61f75ae36644a",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
             "key": "field_61f7669423fad",
             "label": "Agent Subheader Eyebrow",
             "name": "subheader_eyebrow",
@@ -440,5 +472,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1644546928
+    "modified": 1645761682
 }
