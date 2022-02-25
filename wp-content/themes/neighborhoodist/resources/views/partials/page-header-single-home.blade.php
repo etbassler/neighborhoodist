@@ -19,7 +19,7 @@
           </div>
           <div class="home-info--meta--bottom">
             <div class="status">{{$status}}</div>
-            <a href="">Interested in this property?</a>
+            <a href="#agentSubheader">Interested in this property?</a>
           </div>
 
         </div>
