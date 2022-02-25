@@ -22,9 +22,7 @@
         <h2>{!! get_field('header') !!}</h2>
       </div>
     </div>
-    <div class="row">
       @php $homeID = get_field('home') @endphp
-    </div>
     <div class="row">
       <div class="col-md-5 p-0">
         {!! App::acfimg(get_post_thumbnail_id($homeID),'large') !!}

@@ -1,10 +1,10 @@
 <article @php post_class() @endphp>
-  <div class="page-content page-content--home">
+  <div class="page-content page-content--neighborhood">
     @php the_content() @endphp
   </div>
   @if ($enable_subheader == true)
 
-<div class="home-subheader"    style="{{background: url('') no-repeat center;">
+<div class="home-subheader">
   <div class="container">
     <div class="row">
       <div class="col-md-6">
@@ -15,10 +15,7 @@
       </div>
       <div class="col-md-6">
     <div class="home-subheader--author">
-      @php $realtor = get_field('realtor_neighborhood_connection',$connections[0])[0] @endphp
-      @php if ($agent_override) {
-$realtor = $agent_override[0];
-  } @endphp
+      @php $realtor = get_field('realtor_neighborhood_connection')[0] @endphp
       {!! App::acfimg(get_post_thumbnail_id($realtor->ID),'large') !!}
       <div class="home-subheader--author-info">
       <span>Listing Agent</span>
@@ -49,5 +46,4 @@ $realtor = $agent_override[0];
   </div>
 </div>
   @endif
-  @include('partials.related-content')
 </article>
