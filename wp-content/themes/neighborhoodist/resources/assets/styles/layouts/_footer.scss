@@ -160,6 +160,123 @@
 
 }
 
+footer.footer {
+	a.brand {
+		width: auto !important;
+		margin-bottom: 35px !important;
+	}
+	h2.footer-logo {
+		font-size: 35px;
+		font-weight: 700;
+		font-stretch: normal;
+		font-style: normal;
+		line-height: normal;
+		letter-spacing: 1.78px;
+		color: #000000;
+		font-family: $sans-serif-alt-x;
+		text-transform: uppercase;
+		margin: 0 !important;
+	}
+}
+footer.footer {
+	span.footer-info--title {
+		font-weight: 700;
+		margin-bottom: 8px;
+		display: block;
+	}
+	.col-md-6 {
+		p {
+			display: none;
+		}
+		ul {
+			padding: 0;
+			li {
+				list-style-type: none;
+				a {
+					font-weight: normal;
+					letter-spacing: 0.5px !important;
+					color: #000 !important;
+				}
+			}
+		}
+		.gform_fields {
+			display: unset;
+			float: left;
+			width: 100%;
+		}
+		form {
+			fieldset {
+				float: left;
+				width: 50%;
+				display: unset !important;
+				&:nth-of-type(1) {
+					padding-right: 10px;
+				}
+				&:nth-of-type(2) {
+					padding-left: 10px;
+				}
+				input {
+					background: #e5e5e5;
+					border: 0;
+				}
+				legend {
+					margin: 0 !important;
+					color: #353535 !important;
+					font-family: $sans-serif !important;
+					font-weight: 300 !important;
+					font-size: 12px !important;
+				}
+			}
+			input {
+				background: #e5e5e5;
+				border: 0;
+			}
+			label {
+				margin: 0 !important;
+				color: #353535 !important;
+				font-family: $sans-serif !important;
+				font-weight: 300 !important;
+				font-size: 12px !important;
+				margin: 0 !important;
+				color: #353535 !important;
+				font-family:  !important;
+				font-weight: 300 !important;
+				font-size: 12px !important;
+			}
+			select {
+				background: #e5e5e5;
+				border: 0;
+			}
+			.gform_footer.top_label {
+				input {
+					margin-top: 25px;
+					padding: 10px 20px;
+					letter-spacing: 0.5px !important;
+					line-height: normal;
+					background: #e01a31;
+					font-size: 14px;
+					font-weight: 800;
+					color: #fff;
+					text-transform: uppercase;
+				}
+			}
+		}
+	}
+}
+.footer {
+	.footer-bottom {
+		color: #353535;
+		span {
+			color: #353535;
+		}
+		a {
+			color: #353535;
+		}
+	}
+}
+
+
+
 
 @media screen and (max-width: 767px) {
   .footer-bottom {

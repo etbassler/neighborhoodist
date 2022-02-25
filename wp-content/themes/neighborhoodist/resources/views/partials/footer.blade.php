@@ -4,8 +4,10 @@
       <div class="col-md-6">
       <a class="brand" href="{{ home_url('/') }}">
         <span class="sr-only">{{ get_bloginfo('name', 'display') }}</span>
-        <img src="/wp-content/themes/neighborhoodist/resources/assets/images/logo@2x.png" alt="Neighborhoodist Logo">
-      </a>
+ <!-- <img src="/wp-content/themes/neighborhoodist/resources/assets/images/logo@2x.png" alt="Neighborhoodist Logo">-->
+		  <h2 class="footer-logo">
+			Neighborhoodist  
+		  </h2>      </a>
       <div class="d-flex footer-info">
         <div class="col-md-6">
           <span class="footer-info--title">Contact Info</span>

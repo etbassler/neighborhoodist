@@ -76,7 +76,7 @@ class FacetWP_Display
                 $wp_query = $temp_query;
 
                 $output = '<div class="facetwp-template" data-name="' . $atts['template'] . '">';
-                $output .= $preload_data['template'];
+                $output .= '<div class="container"><div class="row">'.$preload_data['template']. '</div></div>';
                 $output .= '</div>';
 
                 $this->load_assets = true;

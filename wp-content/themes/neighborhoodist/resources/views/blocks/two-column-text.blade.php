@@ -18,10 +18,10 @@
 <div data-{{ $block['id'] }} class="{{ $block['classes'] }} two-column-text-section background-{{ get_field('background_colors') }}">
   <div class="container">
     <div class="row">
-      <div class="col-md-8">
+      <div class="col-md-6">
         {!! get_field('text') !!}
       </div>
-      <div class="col-md-4">
+      <div class="col-md-6">
         <h3>{!! get_field('right_header') !!}</h3>
         {!! get_field('right_text') !!}
       </div>

@@ -18,11 +18,11 @@
 <div data-{{ $block['id'] }} class="{{ $block['classes'] }} cta-section background-{{ get_field('background_colors') }}">
 <div class="container">
     <div class="row justify-content-center ">
-      <div class="col-md-6">
+      <div class="col-md-5">
           <img src="{!! get_field('cta_image')['url'] !!}" alt="{!! get_field('cta_image')['alt'] !!}">
 
       </div>
-      <div class="col-md-6 d-flex align-items-start flex-column justify-content-center">
+      <div class="col-md-7 d-flex align-items-start flex-column justify-content-center">
       <div class="header-eyebrow"> {!! get_field('cta_eyebrow')!!}</div>
       <h2>{!! get_field('cta_title')!!}</h2>
       <p>{!! get_field('cta_text')!!}</p>
