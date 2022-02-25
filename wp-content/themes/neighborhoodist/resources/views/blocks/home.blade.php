@@ -29,7 +29,7 @@
         <div class="home--magazine-info">
           {!! App::acfimg(get_field('magazine_cover',$homeID)['ID'],'large') !!}
           <div class="magazine-text">
-          {{get_field('$magazine_text',$homeID) ? get_field('magazine_text',$homeID) : 'Default copy when nothing else is used.'}}
+          {{get_field('$magazine_text',$homeID) ? get_field('magazine_text',$homeID) : '<p class="mb-0"><strong>On the Cover</strong></p> <p class="Featured-on-the-cove">Featured on the cover et is dignissimos ducimus qui blanditiis voluptatum. <a href="/magazine">Want your house on the cover?</a></p>'}}
           </div>
         </div>
       </div>

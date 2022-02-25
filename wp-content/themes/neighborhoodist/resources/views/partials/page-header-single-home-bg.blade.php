@@ -29,7 +29,7 @@
       <div class="col-md-6 home--magazine-info">
 
           <div class="magazine-text">
-          {!! $magazine_text ? $magazine_text : 'Default copy when nothing else is used.' !!}
+          {!! $magazine_text ? $magazine_text : '<p class="mb-0"><strong>On the Cover</strong></p> <p class="Featured-on-the-cove">Featured on the cover et is dignissimos ducimus qui blanditiis voluptatum. <a href="/magazine">Want your house on the cover?</a></p>' !!}
 
           </div>
           {!! App::acfimg($magazine_cover->ID,'large') !!}
