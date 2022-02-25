@@ -83,3 +83,130 @@
     }
   }
 }
+
+
+.blog {
+	.site-header {
+		background: transparent;
+		.navbar {
+			.navbar-nav {
+				li {
+					a {
+						font-family: $sans-serif;
+						font-weight: 400;
+						font-size: 14px;
+						margin-right: 25px;
+						color: #ffffff;						
+					}
+				}
+			}
+		}
+	}
+	nav.navbar {
+		a.brand.navbar-brand {
+			h2.header-logo {
+				color: #ffffff;
+			}
+		}
+	}
+	.page-header {
+		background: url("/wp-content/uploads/2022/02/directory-top.jpg");
+		height: 538px;
+		background-position: center center;
+		background-repeat: no-repeat;
+		width: 100%;
+		background-size: cover;
+		display: flex;
+		align-items: center;
+		.container {
+			background: transparent;
+		}
+		.col-md-12 {
+			text-align: center !important;
+			h1 {
+				font-size: 20px;
+				font-weight: 600;
+				line-height: normal;
+				letter-spacing: 0.71px;
+				color: #ffffff;
+				font-family: $sans-serif;
+				text-transform:uppercase;
+			}
+		}
+	}
+}
+.blog {
+	.page-header {
+		.col-md-12 {
+			.archive-filters {
+				span.filter-label {
+					font-size: 14px;
+					letter-spacing: 0.71px;
+					color: #ffffff;
+					font-family: $sans-serif;
+				}
+				select.facetwp-dropdown {
+					width: 346px;
+					height: 69px;
+					background-color: #000000;
+					border: 0;
+					color: #ffffff;
+					text-align: center;
+					font-size: 55px;
+					font-weight: 500;
+					font-stretch: normal;
+					font-style: normal;
+					line-height: normal;
+					letter-spacing: 1.17px;
+					font-family: $sans-serif-alt-x;
+					padding: 4px 15px 4px 15px;
+				}
+			}
+		}
+	}
+}
+.blog {
+	.page-content {
+		width: 100%;
+		max-width: 1140px;
+		margin: 0 auto;
+		overflow: hidden;
+		.col-md-3 {
+			float: left;
+			padding: 5px;
+			width: 100%;
+			margin-bottom: 15px;
+			img {
+				min-height: 275px;
+				max-height: 275px;
+				width: 100%;
+			}
+			.result-info {
+				span.neighborhood-title {
+					font-size: 14px;
+					font-weight: 800;
+					font-stretch: normal;
+					font-style: normal;
+					line-height: normal;
+					letter-spacing: 0.5px;
+					padding-left: 20px;
+					padding-top: 10px;
+					display: block;
+					font-family: $sans-serif;
+				}
+				h3 {
+					font-size: 26px;
+					font-weight: 500;
+					font-stretch: normal;
+					font-style: normal;
+					line-height: normal;
+					letter-spacing: 1px;
+					color: #353535 !important;
+					font-family: $sans-serif-alt-x;
+					padding-left: 20px;
+				}
+			}
+		}
+	}
+}
+

@@ -22,9 +22,11 @@
         <h2>{!! get_field('header') !!}</h2>
       </div>
     </div>
-      @php $homeID = get_field('home') @endphp
     <div class="row">
-      <div class="col-md-5 p-0">
+      @php $homeID = get_field('home') @endphp
+    </div>
+    <div class="row">
+      <div class="col-md-7 p-0">
         {!! App::acfimg(get_post_thumbnail_id($homeID),'large') !!}
         <div class="home--magazine-info">
           {!! App::acfimg(get_field('magazine_cover',$homeID)['ID'],'large') !!}
@@ -33,7 +35,7 @@
           </div>
         </div>
       </div>
-      <div class="col-md-7">
+      <div class="col-md-5">
         <div class="home-info">
           <span class="header-eyebrow">@php echo get_the_title(get_field('connections',$homeID)[0])@endphp</span>
           <h2 class="h1">@php echo get_the_title($homeID)@endphp</h2>
