@@ -9,7 +9,7 @@
       <div class="col-md-8 text-center">
         <h1 class="sr-only">{!! App::title() !!}</h1>
         <div class="description-text">Directory Of</div>
-        <div class="archive-filters d-flex justify-content-around text-left">
+        <div class="archive-filters d-flex justify-content-around">
           <div>
             <span class="filter-label">Select Neighborhood</span>
             @php echo do_shortcode(' [facetwp facet="connections"]');@endphp
